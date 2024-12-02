@@ -43,7 +43,7 @@ router.post("/create-user", upload.single("file"), async (req, res, next) => {
 
     const activationToken = createActivationToken(user);
 
-    const activationUrl = `http://localhost:3001/activation/${activationToken}`;
+    const activationUrl = `https://zig-stock-front.vercel.app/activation/${activationToken}`;
 
     // send email to user
     try {

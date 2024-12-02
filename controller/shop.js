@@ -46,7 +46,7 @@ router.post("/create-shop", upload.single("file"), async (req, res, next) => {
     const activationToken = createActivationToken(seller);
 
 
-    const activationUrl = `http://localhost:3001/seller/activation/${activationToken}`;
+    const activationUrl = `https://zig-stock-front.vercel.app/seller/activation/${activationToken}`;
 
     try {
       await sendMail({

@@ -29,7 +29,7 @@ app.use(cookieParser());
 
 
 const corsOptions = {
-  origin: 'http://localhost:3001', // Allow this origin
+  origin: 'https://zig-stock-front.vercel.app/', // Allow this origin
   credentials: true,              // Allow credentials (cookies, auth)
 };
 

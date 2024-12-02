@@ -33,7 +33,7 @@ const corsOptions = {
   credentials: true,              // Allow credentials (cookies, auth)
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 app.use("/", express.static("uploads"));
 

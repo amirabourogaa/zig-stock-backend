@@ -173,6 +173,8 @@ router.get(
       res.cookie("token", null, {
         expires: new Date(Date.now()),
         httpOnly: true,
+        sameSite: "None",
+        secure: true, // Required for HTTPS
       });
       res.status(201).json({
         success: true,
